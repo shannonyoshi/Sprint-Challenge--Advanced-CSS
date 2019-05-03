@@ -1,1 +1,26 @@
-// Navigation code here
+.top-nav{
+    background-color: @nav-bg;
+    border-bottom: 2px solid @nav-border;
+    nav{
+        text-align: center;
+        a{
+            text-decoration: none;
+            font-size:1.75vw;
+            padding: 1%;
+            color:@nav-font;
+            line-height: 2.5;
+            @media @phone{
+                font-size:3.5vw;
+            }
+        }
+    }
+}
+//Would it be better to style this on the home-page.less?
+.logo{
+    font-size:4vw;
+    text-align: center;
+    padding: 1.5%;
+    @media @phone{
+        font-size:7vw;
+    }
+}

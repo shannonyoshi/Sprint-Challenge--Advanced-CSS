@@ -1,1 +1,23 @@
-// Mixins Here
+.btn-mixin (@btn-bg-color,@btn-txt-color,@btn-width:10vw,@btn-height:auto){
+    font-size: 1.75em;
+    padding: 2%;
+    border-radius: 5px;
+    background-color:@btn-bg-color;
+    color: @btn-txt-color;
+    text-align: center;
+    width:@btn-width;
+    height:@btn-height;
+    vertical-align: middle;
+    cursor: pointer;
+  
+    &:hover { 
+      background-color: @btn-txt-color;
+      color:@btn-bg-color;
+      border: 1px solid @btn-bg-color;
+    }
+  }
+
+  .mobiled(){
+      width:100%;
+      padding:15px;
+  }
